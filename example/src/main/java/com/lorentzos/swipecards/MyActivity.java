@@ -44,7 +44,7 @@ public class MyActivity extends Activity {
         al.add("javascript");
 
         arrayAdapter = new ArrayAdapter<>(this, R.layout.item, R.id.helloText, al );
-
+        flingContainer.setMaxVisible(4);
 
         flingContainer.setAdapter(arrayAdapter);
         flingContainer.setFlingListener(new SwipeFlingAdapterView.onFlingListener() {
